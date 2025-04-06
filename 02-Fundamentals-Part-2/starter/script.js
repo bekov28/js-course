@@ -39,14 +39,12 @@
 // const age = calcAge(1968);
 // console.log(age);
 
-
-
 // const calcAverage = (a, b, c) => (a + b + c) / 3;
- 
+
 // let scoreDolphins = calcAverage(44, 23, 71);
 // let scoreKoalas = calcAverage(65, 54, 49);
 // console.log(scoreDolphins, scoreKoalas);
- 
+
 // const checkWinner = function (avgDolphins, avgKoalas) {
 //   if (avgDolphins >= 2 * avgKoalas) {
 //     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
@@ -56,9 +54,8 @@
 //     console.log('No team wins...');
 //   }
 // };
- 
-// checkWinner(scoreDolphins, scoreKoalas);
 
+// checkWinner(scoreDolphins, scoreKoalas);
 
 // const calcTip = function(bill) {
 //     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -71,3 +68,32 @@
 
 // const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
+//Objects
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmemand",
+  age: 2025 - 1985,
+  job: "teacher",
+  friends: ["Michael", "Williams", "Keynes"],
+};
+console.log(jonas);
+
+console.log(jonas.job); //1-method
+console.log(jonas["job"]); //2-method
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// const name = prompt('What is your name?');
+// console.log(name);
+
+//Adding data to objects:
+
+jonas.location = "Tashkent";
+jonas["twitter"] = "@berdiyor";
+console.log(jonas);
+
+console.log(`${jonas.firstName} has  ${jonas.friends.length} friends, and his best friend 
+is called ${jonas.friends[0]}`);
