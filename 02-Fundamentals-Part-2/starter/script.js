@@ -98,36 +98,45 @@
 // console.log(`${jonas.firstName} has  ${jonas.friends.length} friends, and his best friend
 // is called ${jonas.friends[0]}`);
 
+
+
 /* Write your code below. Good luck! 🙂 */
 
-const mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-const john = {
-  fullName: "John Smith",
-  mass: 92,
-  height: 1.95,
-  calcBMI: function () {
-    this.bmi = this.mass / (this.height * this.height);
-    return this.bmi;
-  },
-};
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   },
+// };
 
-mark.calcBMI();
-john.calcBMI();
+// mark.calcBMI();
+// john.calcBMI();
 
-const result =
-  john.bmi > mark.bmi
-    ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
-    : `${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${
-        john.fullName
-      }'s (${john.bmi.toFixed(1)})!`;
+// const result =
+//   john.bmi > mark.bmi
+//     ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
+//     : `${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${
+//         john.fullName
+//       }'s (${john.bmi.toFixed(1)})!`;
 
-console.log(result);
+// console.log(result);
+
+
+// for loop 
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Hello World! ${rep}`)
+}
