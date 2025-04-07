@@ -98,8 +98,6 @@
 // console.log(`${jonas.firstName} has  ${jonas.friends.length} friends, and his best friend
 // is called ${jonas.friends[0]}`);
 
-
-
 /* Write your code below. Good luck! 🙂 */
 
 // const mark = {
@@ -134,9 +132,18 @@
 
 // console.log(result);
 
+// for loop
 
-// for loop 
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Hello World! ${rep}`)
+// }
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Hello World! ${rep}`)
-}
+
+const jonasArray = [
+    'Jonas',
+    'Schmidt',
+    2037-1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+]
+
