@@ -70,30 +70,64 @@
 
 //Objects
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmemand",
-  age: 2025 - 1985,
-  job: "teacher",
-  friends: ["Michael", "Williams", "Keynes"],
-};
-console.log(jonas);
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmemand",
+//   age: 2025 - 1985,
+//   job: "teacher",
+//   friends: ["Michael", "Williams", "Keynes"],
+// };
+// console.log(jonas);
 
-console.log(jonas.job); //1-method
-console.log(jonas["job"]); //2-method
+// console.log(jonas.job); //1-method
+// console.log(jonas["job"]); //2-method
 
-const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
 
 // const name = prompt('What is your name?');
 // console.log(name);
 
 //Adding data to objects:
 
-jonas.location = "Tashkent";
-jonas["twitter"] = "@berdiyor";
-console.log(jonas);
+// jonas.location = "Tashkent";
+// jonas["twitter"] = "@berdiyor";
+// console.log(jonas);
 
-console.log(`${jonas.firstName} has  ${jonas.friends.length} friends, and his best friend 
-is called ${jonas.friends[0]}`);
+// console.log(`${jonas.firstName} has  ${jonas.friends.length} friends, and his best friend
+// is called ${jonas.friends[0]}`);
+
+/* Write your code below. Good luck! 🙂 */
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+const result =
+  john.bmi > mark.bmi
+    ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`
+    : `${mark.fullName}'s BMI (${mark.bmi.toFixed(1)}) is higher than ${
+        john.fullName
+      }'s (${john.bmi.toFixed(1)})!`;
+
+console.log(result);
