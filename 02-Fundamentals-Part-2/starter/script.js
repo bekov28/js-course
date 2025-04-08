@@ -184,20 +184,9 @@
 // }
 // console.log(calcAverage(totals));
 
+//Console types
 
-//Finding the min/max element of an Array
+// console.log("Hello");
+// console.warn("Hello");
+// console.error("Hello");
 
-const calcTempAmplitude = function (array) {
-  let max = array[0];
-  let min = array[0];
-
-  for (let i = 0; i < array.length; i++) {
-   const curTemp = array[i];
-
-    if (curTemp > max) max = curTemp;
-    if (curTemp < min) min = curTemp;
-  }
-  console.log(max);
-  console.log(min);
-};
-calcTempAmplitude([100, 150, 75, 567]);
