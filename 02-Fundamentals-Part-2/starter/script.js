@@ -160,17 +160,17 @@
 // const calcTip = function (bill) {
 //     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 //   }
-  
+
 //   const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 //   const tips = [];
 //   const totals = [];
-  
+
 //   for(let i = 0; i < bills.length; i++) {
 //       const tip = calcTip(bills[i]);
 //       tips.push(tip);
 //       totals.push(tip + bills[i]);
 //   }
-  
+
 //   console.log(bills, tips, totals);
 
 //Practice ---->
@@ -184,3 +184,20 @@
 // }
 // console.log(calcAverage(totals));
 
+
+//Finding the min/max element of an Array
+
+const calcTempAmplitude = function (array) {
+  let max = array[0];
+  let min = array[0];
+
+  for (let i = 0; i < array.length; i++) {
+   const curTemp = array[i];
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max);
+  console.log(min);
+};
+calcTempAmplitude([100, 150, 75, 567]);
