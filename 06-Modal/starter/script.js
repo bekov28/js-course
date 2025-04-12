@@ -12,7 +12,6 @@ const closeModal = function () {
 };
 
 const openModal = function () {
-    console.log('Modal clicked!')
   modal.classList.remove('hidden');
   // modal.style.display = 'block';
   overlay.classList.remove('hidden');
@@ -23,3 +22,13 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
 }
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+//Handling Esc Keypress event
+
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
