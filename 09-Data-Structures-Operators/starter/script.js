@@ -30,19 +30,8 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 };
 
@@ -60,8 +49,26 @@ console.log(x, y, z);
 let [first, , , last] = restaurant.categories;
 console.log(first, last);
 
+//Switching variables
 //changing the order
-const temp = first;
-first = last;
-last = temp;
+// const temp = first;
+// first = last;
+// last = temp;
+// console.log(first, last);
+
+[first, last] = [last, first];
 console.log(first, last);
+
+//Receive 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0); //Garlic Bread && Pizza
+console.log(starter, mainCourse);
+
+const nested = [2, 4, [5, 6]];
+// const [i, , g] = nested;
+// console.log(i, g);
+const [i, , [g, k]] = nested;
+console.log(i, g, k);
+
+//setting default value
+const [p = 1, q = 2, r = 7] = [8, 9];
+console.log(p, q, r); //8, 9, 7
