@@ -46,10 +46,22 @@ const restaurant = {
   },
 };
 
+//Array destructuring
 const arr = [2, 3, 4];
+
+//without destructuring
 const a = arr[0];
 const b = arr[1];
 const c = arr[2];
 
 const [x, y, z] = arr;
 console.log(x, y, z);
+
+let [first, , , last] = restaurant.categories;
+console.log(first, last);
+
+//changing the order
+const temp = first;
+first = last;
+last = temp;
+console.log(first, last);
