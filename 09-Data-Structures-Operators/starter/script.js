@@ -48,7 +48,13 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+
+  orderDelivery: function (obj) {
+    console.log(obj);
+  },
 };
+
+
 
 //Object destructuring
 // const { name, openingHours, categories } = restaurant;
@@ -66,14 +72,17 @@ const restaurant = {
 // console.log(menu, starters);
 
 //Mutating variables
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
-({ a, b } = obj);  //{a, b} = obj   => doesnt work, need to wrap in parathesis
-console.log(a, b)
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
+// ({ a, b } = obj); //{a, b} = obj   => doesnt work, need to wrap in parathesis
+// console.log(a, b);
 
-
-
+//Nested objects
+// const {
+//   fri: { open, close },
+// } = restaurant.openingHours;
+// console.log(open, close);
 
 //Array destructuring
 // const arr = [2, 3, 4];
