@@ -72,3 +72,4 @@ console.log(i, g, k);
 //setting default value
 const [p = 1, q = 2, r = 7] = [8, 9];
 console.log(p, q, r); //8, 9, 7
+
