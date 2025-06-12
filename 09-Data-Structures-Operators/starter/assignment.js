@@ -223,7 +223,7 @@ const books = [
   },
 ];
 
-//Assignments
+//Array Destructuring Assignment
 
 //1.1
 //Destructure the books array into two variables called firstBook and secondBook.
