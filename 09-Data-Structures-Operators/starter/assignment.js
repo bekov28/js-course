@@ -268,6 +268,12 @@ array into a variable called tags. The tags variable should be assigned with the
 
 //Array Destructuring Assignment
 
+//2.6
+// function printBookInfo(title, author, year = 'year unknown') {
+//   console.log(`"${title} by ${author}, ${year}"`);
+// }
+// printBookInfo('Algorithms', 'Robert Sedgewick', 2011);
+
 //1.1
 //Destructure the books array into two variables called firstBook and secondBook.
 // const [firstBook, secondBook] = books;
