@@ -56,6 +56,7 @@ const restaurant = {
 
 
 
+
 //Object destructuring
 // const { name, openingHours, categories } = restaurant;
 
@@ -83,6 +84,9 @@ const restaurant = {
 //   fri: { open, close },
 // } = restaurant.openingHours;
 // console.log(open, close);
+
+
+
 
 //Array destructuring
 // const arr = [2, 3, 4];
