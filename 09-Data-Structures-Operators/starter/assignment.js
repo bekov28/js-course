@@ -254,6 +254,18 @@ array into a variable called tags. The tags variable should be assigned with the
 // ({ title: bookTitle, author: bookAuthor } = books[0]);
 // console.log(bookTitle, bookAuthor);
 
+//2.5
+
+// const { bookRating = books[0].thirdParty.goodreads.rating } = books[0];
+// console.log(bookRating);
+
+// const {
+//   thirdParty: {
+//     goodreads: { rating: bookRating },
+//   },
+// } = books[0];
+// console.log(bookRating);
+
 //Array Destructuring Assignment
 
 //1.1
