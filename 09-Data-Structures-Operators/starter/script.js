@@ -52,8 +52,6 @@ const restaurant = {
   orderDelivery: function (obj) {
     console.log(obj);
   },
-
-
 };
 
 //Object destructuring
@@ -124,26 +122,37 @@ const restaurant = {
 
 //Spread operator - only used with arrays/
 
-const arr = [7, 8, 9];
-const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
-console.log(...arr);
+// const arr = [7, 8, 9];
+// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+// console.log(...arr);
 
-const goodArr = [1, 2, ...arr];
-console.log(goodArr);
+// const goodArr = [1, 2, ...arr];
+// console.log(goodArr);
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
 
-//Copy Array
-const mainMenuCopy = [...restaurant.mainMenu];
+// //Copy Array
+// const mainMenuCopy = [...restaurant.mainMenu];
 
-//Join 2 arrays
+// //Join 2 arrays
 
-const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
-console.log(menu);
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(menu);
 
-//Iterables: arrays, strings, maps, sets. Not objects
-const str = 'Berdiyor';
-console.log(...str);
+// //Iterables: arrays, strings, maps, sets. Not objects
+// const str = 'Berdiyor';
+// console.log(...str);
+
+//Rest operator
+//The spread operator is used to unpack an array into elements, while rest is to pack elements into an array
+
+//Spread
+// const arr = [1, 2, ...[3, 4]];
+// console.log(arr);
+
+//Rest - comes on the left side - always at the last
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
 
