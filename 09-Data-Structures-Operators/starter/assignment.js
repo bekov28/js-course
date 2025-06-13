@@ -301,3 +301,4 @@ oneStarRatings and threeStarRatings. Assign the threeStarRatings variable with a
 // const ratingStars = [63405, 1808];
 
 // const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+

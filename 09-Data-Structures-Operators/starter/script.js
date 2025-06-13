@@ -52,10 +52,9 @@ const restaurant = {
   orderDelivery: function (obj) {
     console.log(obj);
   },
+
+  
 };
-
-
-
 
 //Object destructuring
 // const { name, openingHours, categories } = restaurant;
@@ -84,9 +83,6 @@ const restaurant = {
 //   fri: { open, close },
 // } = restaurant.openingHours;
 // console.log(open, close);
-
-
-
 
 //Array destructuring
 // const arr = [2, 3, 4];
@@ -125,3 +121,28 @@ const restaurant = {
 // //setting default value
 // const [p = 1, q = 2, r = 7] = [8, 9];
 // console.log(p, q, r); //8, 9, 7
+
+//Spread operator - only used with arrays/
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+console.log(...arr);
+
+const goodArr = [1, 2, ...arr];
+console.log(goodArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+//Copy Array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//Join 2 arrays
+
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+//Iterables: arrays, strings, maps, sets. Not objects
+const str = 'Berdiyor';
+console.log(...str);
