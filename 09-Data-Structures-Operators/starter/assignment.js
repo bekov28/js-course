@@ -302,3 +302,14 @@ oneStarRatings and threeStarRatings. Assign the threeStarRatings variable with a
 
 // const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 
+//Spread Operator
+
+//3.1
+// const bookAuthors = [...books[0].author, ...books[1].author];
+// console.log(bookAuthors);
+
+//3.2
+// function spellWorld(str) {
+//   console.log(...str);
+// }
+// spellWorld('JavaScript');

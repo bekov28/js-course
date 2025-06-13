@@ -53,7 +53,7 @@ const restaurant = {
     console.log(obj);
   },
 
-  
+
 };
 
 //Object destructuring
@@ -146,3 +146,4 @@ console.log(menu);
 //Iterables: arrays, strings, maps, sets. Not objects
 const str = 'Berdiyor';
 console.log(...str);
+
