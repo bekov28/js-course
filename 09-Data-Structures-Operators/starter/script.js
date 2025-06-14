@@ -187,3 +187,34 @@ const restaurant = {
 // //Nullish: null and undefined (Not 0 or '')
 // const guestCorrect = restaurant.numGuests ?? 10;
 // console.log(guestCorrect);
+
+//Logical Assignment Operators (ES 2021)
+
+// const rest1 = {
+//   name: 'Capri',
+//   namGuests: 20,
+// };
+
+// const rest2 = {
+//   name: 'La Piazza',
+//   owner: 'Giovanni Rossi',
+// };
+// rest1.namGuests = rest1.namGuests || 10; //20
+// rest2.namGuests = rest2.namGuests || 10; //10
+
+// //Yuqoridagini yangicha ko'rinishi
+// rest1.namGuests ||= 10;
+// rest2.namGuests ||= 10;
+
+// //0 holati uchun Nullish assignment
+// rest1.namGuests ??= 10;
+// rest2.namGuests ??= 10;
+
+// rest1.owner = rest1.owner && '<Anonymous>';
+// rest2.owner = rest2.owner && '<Anonymous>';
+
+// rest1.owner &&= '<Anonymous>';
+// rest2.owner &&= '<Anonymous>';
+
+// console.log(rest1);
+// console.log(rest2);
