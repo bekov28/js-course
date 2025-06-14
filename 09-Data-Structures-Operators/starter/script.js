@@ -156,3 +156,25 @@ const restaurant = {
 // const [a, b, ...others] = [1, 2, 3, 4, 5];
 // console.log(a, b, others);
 
+//Objects
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(sat, weekdays);
+
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   console.log(sum);
+// };
+// add(2, 3);
+// add(5, 3, 7, 2);
+
+//Short Circuiting (&& and ||)
+// console.log(3 || 'Jonas'); //3 - if the first value is  truthy, it immediately returns it
+// console.log('Jonas' || 3); //Jonas
+// console.log('' || 'Jonas'); //Jonas
+// console.log(undefined || null)
+// console.log(0 && 'Jonas'); //0 -> && operator logs falsy value and returns immediately unlike ||
+// console.log(7 && 8); //8 -> && operator is true if only all values are true
+
