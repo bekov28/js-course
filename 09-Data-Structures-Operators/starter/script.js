@@ -178,3 +178,12 @@ const restaurant = {
 // console.log(0 && 'Jonas'); //0 -> && operator logs falsy value and returns immediately unlike ||
 // console.log(7 && 8); //8 -> && operator is true if only all values are true
 
+//Nullish Coalisting Operator
+
+// restaurant.numGuests = 0;
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
+
+// //Nullish: null and undefined (Not 0 or '')
+// const guestCorrect = restaurant.numGuests ?? 10;
+// console.log(guestCorrect);
