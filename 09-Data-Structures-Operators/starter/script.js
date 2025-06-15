@@ -22,6 +22,20 @@ const mexicanFoods = new Set([
   'garlic',
 ]);
 
+const openingHours = {
+  thu: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0,
+    close: 24,
+  },
+};
 // Data needed for first part of the section
 const restaurant = {
   name: 'Classico Italiano',
@@ -30,26 +44,12 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
-
-  order: function (starterIndex, mainIndex) {
+  //ES6 enhanced object literals
+  openingHours,
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-
-  orderDelivery: function (obj) {
+  orderDelivery(obj) {
     console.log(obj);
   },
 };
