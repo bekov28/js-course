@@ -468,16 +468,20 @@ GOOD LUCK 😀
 //   console.log((pageSum += book.pages));
 // }
 
-//8.2
-// const allAuthors = [];
+//8.2 and 8.3
+const allAuthors = [];
 
-// for (const book of books) {
-//   if (typeof book.author === 'string') {
-//     allAuthors.push(book.author);
-//   } else {
-//     for (const author of book.author) {
-//       allAuthors.push(author);
-//     }
-//   }
-//   console.log(allAuthors);
-// }
+for (const book of books) {
+  if (typeof book.author === 'string') {
+    allAuthors.push(book.author);
+  } else {
+    for (const author of book.author) {
+      allAuthors.push(author);
+    }
+  }
+  console.log(allAuthors);
+}
+
+for (const [index, author] of allAuthors.entries()) {
+  console.log(`${index + 1}. ${author}`);
+}
