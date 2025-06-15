@@ -461,3 +461,23 @@ GOOD LUCK 😀
 
 // game.odds.team1 < game.odds.team2 && console.log('Team 1 is likely to win');
 // game.odds.team1 > game.odds.team2 && console.log('Team 2 is likely to win');
+
+//8.1
+// let pageSum = 0;
+// for (let book of books) {
+//   console.log((pageSum += book.pages));
+// }
+
+//8.2
+// const allAuthors = [];
+
+// for (const book of books) {
+//   if (typeof book.author === 'string') {
+//     allAuthors.push(book.author);
+//   } else {
+//     for (const author of book.author) {
+//       allAuthors.push(author);
+//     }
+//   }
+//   console.log(allAuthors);
+// }
