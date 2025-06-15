@@ -218,3 +218,12 @@ const restaurant = {
 
 // console.log(rest1);
 // console.log(rest2);
+
+//for-of loop
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+// for (const item of menu) console.log(item);
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1}. ${el}`);
+// }
