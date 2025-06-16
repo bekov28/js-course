@@ -52,7 +52,29 @@ const restaurant = {
   orderDelivery(obj) {
     console.log(obj);
   },
-};
+};ç
+
+//Optional Chaining /ES2020
+
+if (restaurant.openingHours && restaurant.openingHours.mon)
+  console.log(restaurant.openingHours.mon.open);
+
+//With optional chaining: (for getting undefined instead of error)
+console.log(restaurant.openingHours.mon?.open);
+
+//Example:
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we open at ${open}`);
+}
+//Methods:
+console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
+
+//Optional chaining for Arrays
+const users = [{ name: 'Berdiyor', email: 'hello@gmail.com' }];
+console.log(users[0].name ?? 'User array emply');
 
 //Object destructuring
 // const { name, openingHours, categories } = restaurant;
