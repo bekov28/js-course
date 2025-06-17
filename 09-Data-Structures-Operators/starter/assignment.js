@@ -509,3 +509,10 @@ GOOD LUCK 😀
 //   author: ['Brian W. Kernighan', 'Dennis M. Ritchie'],
 //   pages
 // };
+
+//10.1 Optional Chaining
+
+// function getFirstKeyWord(book) {
+//   return book.keywords?.[0];
+// }
+// console.log(getFirstKeyWord(books[0]));
