@@ -524,13 +524,16 @@ GOOD LUCK 😀
 //   entries.push([key]);
 // }
 
-class Solution {
-  getTable(n) {
-    // code here
-    for (let i = 0; i < 10; i++) {
-      return n++;
-    }
-  }
-}
-const table = new Solution();
-console.log(table.getTable(5));
+// class Solution {
+//   getTable(n) {
+//     // code here
+//     const table = [];
+
+//     for (let i = 1; i <= 10; i++) {
+//       table.push(n * i);
+//     }
+//     return table;
+//   }
+// }
+// const table = new Solution();
+// console.log(table.getTable(7));
