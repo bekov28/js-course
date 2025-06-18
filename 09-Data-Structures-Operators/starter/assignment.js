@@ -516,3 +516,21 @@ GOOD LUCK 😀
 //   return book.keywords?.[0];
 // }
 // console.log(getFirstKeyWord(books[0]));
+
+//11.1
+// const entries = [];
+
+// for (const key of Object.keys(books[0].thirdParty.goodreads)) {
+//   entries.push([key]);
+// }
+
+class Solution {
+  getTable(n) {
+    // code here
+    for (let i = 0; i < 10; i++) {
+      return n++;
+    }
+  }
+}
+const table = new Solution();
+console.log(table.getTable(5));
