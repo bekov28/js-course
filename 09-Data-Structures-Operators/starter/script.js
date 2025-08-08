@@ -8,11 +8,41 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-  //ES6 enhanced object literals
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0,
+      close: 24,
+    },
+  },
+
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 };
+
+//Object destructuring
+// const { thu, fri } = restaurant.openingHours;
+// console.log(thu, fri);
+
+// const { name, openingHours, categories } = restaurant;
+// console.log(name)
+
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+//Mutating variables
+// let a = 111;
+// let b = 999;
+// const obj = {a : 23, b: 7, c: 14}
+
 
 //Practice with arrays
 
@@ -37,5 +67,5 @@ const restaurant = {
 
 //Default values
 
-const [p = 1, q = 1, r = 1] = [8, 7];
-console.log(p, q, r)
+// const [p = 1, q = 1, r = 1] = [8, 7];
+// console.log(p, q, r)
