@@ -171,27 +171,67 @@ const mexicalFoods = new Set([
 // console.log(rest.get(arr)); //Test
 
 //---------Maps: Iteration--------------
-const question = new Map([
-  ['question', 'What is the best programming language?'],
-  [1, 'C'],
-  [2, 'Java'],
-  [3, 'JavaScript'],
-  ['correct', 3],
-  [true, 'Correct!!'],
-  [false, 'Try again!'],
-]);
-console.log(question);
+// const question = new Map([
+//   ['question', 'What is the best programming language?'],
+//   [1, 'C'],
+//   [2, 'Java'],
+//   [3, 'JavaScript'],
+//   ['correct', 3],
+//   [true, 'Correct!!'],
+//   [false, 'Try again!'],
+// ]);
+// console.log(question);
 
 //Convert object to Map
-console.log(Object.entries(restaurant.openingHours));
-const hoursMap = new Map(Object.entries(restaurant.openingHours));
-console.log(hoursMap);
+// console.log(Object.entries(restaurant.openingHours));
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
 
-for (const [key, value] of question) {
-  if (typeof key === 'number') {
-    console.log(`Answer ${key}: ${value}`);
-  }
+// for (const [key, value] of question) {
+//   if (typeof key === 'number') {
+//     console.log(`Answer ${key}: ${value}`);
+//   }
+// }
+
+// //Convert map to array
+// console.log([...question]);
+
+//Challenge
+
+const gameEvents = new Map([
+  [17, 'GOAL'],
+  [36, 'Substitution'],
+  [47, 'GOAL'],
+  [61, 'Substitution'],
+  [64, 'Yellow Card'],
+  [69, 'Red Card'],
+  [70, 'Substitution'],
+  [72, 'Substitution'],
+  [76, 'GOAL'],
+  [80, 'GOAL'],
+  [92, 'Yellow Card'],
+]);
+
+//Task -1
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+
+//Task -2
+gameEvents.delete(64);
+console.log(gameEvents);
+console.log(gameEvents.size);
+
+//Task -3
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+
+console.log(
+  `An event happened, on average, every ${time / gameEvents.size} minutes`
+);
+
+//Task -4
+
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? 'FIRST' : 'SECOND';
+  console.log(`[${half} HALF] ${min}: ${event}`);
 }
-
-//Convert map to array
-console.log([...question]);
