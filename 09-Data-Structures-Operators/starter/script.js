@@ -81,6 +81,7 @@ const restaurant = {
 // console.log(new Set('Berdiyor').size); //length not used here
 
 const italianFoods = new Set([
+  //Set constructor
   'pasta',
   'gnocchi',
   'tomatoes',
@@ -129,3 +130,42 @@ const mexicalFoods = new Set([
 
 //isDisjoint method (to check if Sets have are totally different)
 // console.log(italianFoods.isDisjointFrom(mexicalFoods)); //false (because there are duplicates)
+
+//MAPS
+//Maps are a lot more useful than SETS in practice
+//Maps are also data structures, like Sets, arrays, objects..
+//Maps contain key-value pairs, similar with objects
+//Difference between objects and Maps, in Maps keys can be any data types. In objects, keys are usually strings
+
+// const rest = new Map(); //Map constructor
+// rest.set('name', 'Classico Italiano');
+// rest.set(1, 'Firenze, Italy');
+// console.log(rest.set(2, 'Lisbon, Portugal')); // {'name' => 'Classico Italino', 1 => 'Firenze, Italy'...}
+
+// rest
+//   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian'])
+//   .set('open', 11)
+//   .set('close', 23)
+//   .set(true, 'We are open')
+//   .set(false, 'We are closed');
+
+// console.log(rest.get('name')); //Classico Italiano
+// console.log(rest);
+
+// //Practice
+// const time = 21;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('close'))); //We are open
+
+// console.log(rest.has('categories')); //true
+// console.log(rest.delete(2));
+// console.log(rest); //Key 2 deleted
+// console.log(rest.size); //7
+// rest.clear();
+// console.log(rest); //cleared, size: 0
+
+// rest.set([4, 5], 'Test');
+// console.log(rest.get([4, 5])); //undefined
+
+// const arr = [4, 5];
+// rest.set(arr, 'Test');
+// console.log(rest.get(arr)); //Test
