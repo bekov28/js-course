@@ -131,7 +131,7 @@ const mexicalFoods = new Set([
 //isDisjoint method (to check if Sets have are totally different)
 // console.log(italianFoods.isDisjointFrom(mexicalFoods)); //false (because there are duplicates)
 
-//MAPS
+//----------MAPS: Foundation-----------
 //Maps are a lot more useful than SETS in practice
 //Maps are also data structures, like Sets, arrays, objects..
 //Maps contain key-value pairs, similar with objects
@@ -169,3 +169,29 @@ const mexicalFoods = new Set([
 // const arr = [4, 5];
 // rest.set(arr, 'Test');
 // console.log(rest.get(arr)); //Test
+
+//---------Maps: Iteration--------------
+const question = new Map([
+  ['question', 'What is the best programming language?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct!!'],
+  [false, 'Try again!'],
+]);
+console.log(question);
+
+//Convert object to Map
+console.log(Object.entries(restaurant.openingHours));
+const hoursMap = new Map(Object.entries(restaurant.openingHours));
+console.log(hoursMap);
+
+for (const [key, value] of question) {
+  if (typeof key === 'number') {
+    console.log(`Answer ${key}: ${value}`);
+  }
+}
+
+//Convert map to array
+console.log([...question]);
