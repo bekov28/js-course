@@ -212,26 +212,41 @@ const gameEvents = new Map([
   [92, 'Yellow Card'],
 ]);
 
-//Task -1
-const events = [...new Set(gameEvents.values())];
-console.log(events);
+// //Task -1
+// const events = [...new Set(gameEvents.values())];
+// console.log(events);
 
-//Task -2
-gameEvents.delete(64);
-console.log(gameEvents);
-console.log(gameEvents.size);
+// //Task -2
+// gameEvents.delete(64);
+// console.log(gameEvents);
+// console.log(gameEvents.size);
 
-//Task -3
-const time = [...gameEvents.keys()].pop();
-console.log(time);
+// //Task -3
+// const time = [...gameEvents.keys()].pop();
+// console.log(time);
 
-console.log(
-  `An event happened, on average, every ${time / gameEvents.size} minutes`
-);
+// console.log(
+//   `An event happened, on average, every ${time / gameEvents.size} minutes`
+// );
 
-//Task -4
+// //Task -4
 
-for (const [min, event] of gameEvents) {
-  const half = min <= 45 ? 'FIRST' : 'SECOND';
-  console.log(`[${half} HALF] ${min}: ${event}`);
-}
+// for (const [min, event] of gameEvents) {
+//   const half = min <= 45 ? 'FIRST' : 'SECOND';
+//   console.log(`[${half} HALF] ${min}: ${event}`);
+// }
+
+//--------- Strings----------//
+//Strings are also 0-based as arrays
+
+const airline = 'TOP Air Portugal';
+const plane = 'A320';
+console.log(plane[0]);
+
+//String methods
+console.log(airline.indexOf('r')); //6
+console.log(airline.lastIndexOf('r')); //10
+
+//slice method
+console.log(airline.slice(4)); //Air Portugal
+
