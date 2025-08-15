@@ -250,3 +250,12 @@ console.log(airline.lastIndexOf('r')); //10
 //slice method
 console.log(airline.slice(4)); //Air Portugal
 
+//Task
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// //1. Calculate the sum of juft indexes in arr
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i += 2) {
+//   sum += arr[i];
+// }
+// console.log(sum);
