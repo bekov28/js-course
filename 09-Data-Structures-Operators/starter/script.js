@@ -264,11 +264,20 @@ const gameEvents = new Map([
 // }
 // console.log(sum);
 
-const checkMiddleSeat = function (seat) {
-  //B and E are middle seats
-  const s = seat.slice(-1);
-};
+// const checkMiddleSeat = function (seat) {
+//   //B and E are middle seats
+//   const s = seat.slice(-1);
+//   if (s === 'B' || s === 'E') console.log('You got the middle seat!');
+//   else console.log('You got lucky!');
+// };
 
-checkMiddleSeat('11B');
-checkMiddleSeat('23A');
-checkMiddleSeat('18E');
+// checkMiddleSeat('11B');
+// checkMiddleSeat('23A');
+// checkMiddleSeat('18E');
+
+const airline = 'TAP Air Portugal';
+// console.log(airline.toLowerCase()); //tap air portugal
+// console.log(airline.toUpperCase()); //TAP AIR PORTUGAL
+
+const passenger = 'jOnAS';
+console.log(passenger.toLowerCase());
