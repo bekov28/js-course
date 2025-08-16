@@ -239,16 +239,20 @@ const gameEvents = new Map([
 //--------- Strings----------//
 //Strings are also 0-based as arrays
 
-const airline = 'TOP Air Portugal';
-const plane = 'A320';
-console.log(plane[0]);
+// const airline = 'TAP Air Portugal';
+// const plane = 'A320';
+// console.log(plane[0]);
 
-//String methods
-console.log(airline.indexOf('r')); //6
-console.log(airline.lastIndexOf('r')); //10
+// //String methods
+// console.log(airline.indexOf('r')); //6
+// console.log(airline.lastIndexOf('r')); //10
 
-//slice method
-console.log(airline.slice(4)); //Air Portugal
+// //slice method
+// console.log(airline.slice(4)); //Air Portugal
+// console.log(airline.slice(4, 7)); //Air
+// console.log(airline.slice(0, 4)); //TAP
+// console.log(airline.slice(-2)); //al
+// console.log(airline.slice(1, -1)); //AP Air Portuga
 
 //Task
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -259,3 +263,12 @@ console.log(airline.slice(4)); //Air Portugal
 //   sum += arr[i];
 // }
 // console.log(sum);
+
+const checkMiddleSeat = function (seat) {
+  //B and E are middle seats
+  const s = seat.slice(-1);
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23A');
+checkMiddleSeat('18E');
