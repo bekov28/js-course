@@ -275,9 +275,61 @@ const gameEvents = new Map([
 // checkMiddleSeat('23A');
 // checkMiddleSeat('18E');
 
-const airline = 'TAP Air Portugal';
-// console.log(airline.toLowerCase()); //tap air portugal
-// console.log(airline.toUpperCase()); //TAP AIR PORTUGAL
+// const airline = 'TAP Air Portugal';
+// // console.log(airline.toLowerCase()); //tap air portugal
+// // console.log(airline.toUpperCase()); //TAP AIR PORTUGAL
 
-const passenger = 'jOnAS';
-console.log(passenger.toLowerCase());
+// const passenger = 'jOnAS';
+// const lowerCase = passenger.toLowerCase();
+// console.log(lowerCase.slice(0, 1).toUpperCase() + lowerCase.slice(1));
+// console.log(lowerCase[0].toUpperCase() + lowerCase.slice(1));
+
+// const email = 'hello@jonas.io';
+// const loginEmail = ' Hello@Jonas.Io \n'; //\n enter character
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+//replacing
+// const priceGB = '288,97&';
+// const priceUS = priceGB.replace('&', '$').replace(',', '.');
+// console.log(priceUS);
+
+// const announcement =
+//   'All passengers come to boarding door 23. Boarding door 23!';
+
+// console.log(announcement.replaceAll('door', 'gate'));
+// console.log(announcement.replace(/door/g, 'gate'));
+
+//Booleans
+// const plane = 'A320neo';
+// console.log(plane.includes('A320')); //true
+// console.log(plane.startsWith('Airb')); //false
+
+//split method with strings
+// console.log('a+very+good+friend'.split('+'));
+// console.log('Berdiyor Orzikulov'.split(' ')); //['Berdiyor', 'Orzikulov']
+
+// const capitalizeName = function (name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//     // namesUpper.push(n.slice(0, 1).toUpperCase() + n.slice(1));
+//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(namesUpper.join(' '));
+// };
+
+// capitalizeName('jessica ann smith davis');
+// capitalizeName('berdiyor orzikulov');
+
+//Padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(25, '+').padEnd(30, '+')); //+++++++++++Go to gate 23!+++++
+console.log('Berdiyor'.padStart(25, '+')); //+++++++++++++++++Berdiyor
+
+const maskCreditCard = function (number) {
+  const str = number + ''; //String(number)
+};
