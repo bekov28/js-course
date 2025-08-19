@@ -326,10 +326,19 @@ const gameEvents = new Map([
 // capitalizeName('berdiyor orzikulov');
 
 //Padding
-const message = 'Go to gate 23!';
-console.log(message.padStart(25, '+').padEnd(30, '+')); //+++++++++++Go to gate 23!+++++
-console.log('Berdiyor'.padStart(25, '+')); //+++++++++++++++++Berdiyor
+// const message = 'Go to gate 23!';
+// console.log(message.padStart(25, '+').padEnd(30, '+')); //+++++++++++Go to gate 23!+++++
+// console.log('Berdiyor'.padStart(25, '+')); //+++++++++++++++++Berdiyor
 
 const maskCreditCard = function (number) {
   const str = number + ''; //String(number)
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
 };
+
+console.log(maskCreditCard(4354958734597349));
+console.log(maskCreditCard('38479263487168736128'));
+
+//repeat method
+const message2 = 'Bad weather... All Departures Delayed... ';
+console.log(message2.repeat(5));

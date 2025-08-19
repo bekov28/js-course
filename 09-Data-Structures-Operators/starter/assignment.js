@@ -559,3 +559,5 @@ const game = {
 // }
 // const table = new Solution();
 // console.log(table.getTable(7));
+
+
