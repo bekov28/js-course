@@ -441,7 +441,6 @@ const game = {
 
 //Task -3
 
-
 //1.
 // const [players1, players2] = game.players;
 // console.log(players1, players2);
@@ -560,4 +559,27 @@ const game = {
 // const table = new Solution();
 // console.log(table.getTable(7));
 
+//Assignment 4
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
 
+// document.querySelector('button').addEventListener('click', function () {
+//   const text = document.querySelector('textarea').value;
+//   const rows = text.split('\n');
+//   console.log(rows);
+
+//   for (const row of rows) {
+//     const [first, second] = row.toLowerCase().trim().split('_');
+//     const output = `${first}${second.replace(
+//       second[0],
+//       second[0].toUpperCase()
+//     )}`;
+//     console.log(output.padEnd(20));
+//   }
+// });
+
+// underscore_case
+//  first_name
+// Some_Variable
+//   calculate_AGE
+// delayed_departure
