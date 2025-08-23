@@ -53,3 +53,23 @@
 //1. JavaScript treats functions as first class citizens;
 //2. This means that functions are simply values;
 //3. Functions are just another 'type' of object;
+
+//Function methods: call, apply, bind
+
+//---------Higher order functions-------:
+//A function that receives another function as an argument, that returns a new function or both
+//This is only possible because of first-class functions
+
+// const greet = () => console.log('Hey Jonas');
+// btnClose.addEventListener('click', greet); //addEventListener is a high order function here, because it receives another function as a argument
+//call back function is a passed-in function, for ex: greet function here
+
+function count() {
+  let counter = 0;
+  return function () {
+    counter++;
+  };
+}
+
+//This function is returning another function, so it is also a higher order function
+//The difference between first-class functions and higher order function is that first class functions are just features or values
