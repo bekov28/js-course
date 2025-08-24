@@ -76,26 +76,45 @@ function count() {
 
 //Functions accepting callback functions
 
-const oneWord = function (str) {
-  return str.replace(/ /g, '').toLowerCase();
-};
+// const oneWord = function (str) {
+//   return str.replace(/ /g, '').toLowerCase();
+// };
 
-const upperFirstWord = function (str) {
-  const [first, ...others] = str.split(' ');
-  return [first.toUpperCase(), ...others].join('  ');
-};
+// const upperFirstWord = function (str) {
+//   const [first, ...others] = str.split(' ');
+//   return [first.toUpperCase(), ...others].join('  ');
+// };
 
-const transformer = function (str, fn) {
-  console.log(`Original string: ${str}`);
-  console.log(`Transformed string: ${fn(str)}`);
+// const transformer = function (str, fn) {
+//   console.log(`Original string: ${str}`);
+//   console.log(`Transformed string: ${fn(str)}`);
 
-  console.log(`Transformed by: ${fn.name}`);
-};
-transformer('JavaScript is the best', upperFirstWord);
-transformer('JavaScript is the best', oneWord);
+//   console.log(`Transformed by: ${fn.name}`);
+// };
+// transformer('JavaScript is the best', upperFirstWord);
+// transformer('JavaScript is the best', oneWord);
 
-const high5 = function () {
-  console.log('Hello World!');
-};
+// const high5 = function () {
+//   console.log('Hello World!');
+// };
 
-document.body.addEventListener('click', high5); //high order function
+// document.body.addEventListener('click', high5); //high order function
+
+//-------Functions returning functions--------->
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+// const greaterHey = greet('Hey');
+// greaterHey('Jonas'); //Hey Jonas
+// greaterHey('Steven'); //Hey Steven
+
+// greet('Hello')('Jonas'); //Hello Jonas
+
+// const greetArrow = greeting => name => console.log(`${greeting} ${name}`);
+
+// const greaterHey2 = greetArrow('Hey');
+// greaterHey2('Berdiyor');
+
+//------Call and apply methods------->
