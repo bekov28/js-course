@@ -247,7 +247,7 @@ const poll = {
   // This generates [0, 0, 0, 0]. More in the next section 😃
   answers: new Array(4).fill(0),
   registerNewAnswer: function () {
-    window.prompt(this.question, this.options);
+    window.prompt(`${this.question}\n${this.options.join('\n')}`);
   },
 };
 
