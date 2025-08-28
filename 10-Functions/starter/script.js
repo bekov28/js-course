@@ -161,6 +161,7 @@ book.call(swiss, ...flightData);
 
 //Bind method
 //book.call(eurowings, 23, 'Sarah Williams');
+//Bind method always returns a new function
 
 const bookEW = book.bind(eurowings);
 const bookLH = book.bind(lufthansa);
@@ -180,5 +181,29 @@ lufthansa.buyPlane = function () {
   this.planes++;
   console.log(this.planes);
 };
-document.querySelector('.buy').addEventListener('click', lufthansa.buyPlane);
+document
+  .querySelector('.buy')
+  .addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
 
+//Partial application
+
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+//addVAT = value => value + value * 0.23;
+console.log(addVAT(100)); //123
+console.log(addVAT(23)); //28.29
+
+const addTaxRate = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
+};
+//Solution -1
+// const addVAT2 = addTaxRate(0.23);
+// console.log(addVAT2(100));
+// console.log(addVAT2(23));
+
+//Solution -1
+// console.log(addTaxRate(0.23)(23));
