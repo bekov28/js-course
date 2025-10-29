@@ -140,7 +140,7 @@ const eurowings = {
 
 const book = lufthansa.book;
 
-//book(23, 'Sarah Williams) //wrong, does not work
+//book(23, 'Sarah Williams') //wrong, does not work
 book.call(eurowings, 23, 'Sarah Williams');
 console.log(eurowings);
 
@@ -249,16 +249,18 @@ BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 GOOD LUCK 😀
 */
 
-const poll = {
-  question: 'What is your favourite programming language?',
-  options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
-  // This generates [0, 0, 0, 0]. More in the next section 😃
-  answers: new Array(4).fill(0),
-};
+// const poll = {
+//   question: 'What is your favourite programming language?',
+//   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
+//   // This generates [0, 0, 0, 0]. More in the next section 😃
+//   answers: new Array(4).fill(0),
+// };
 
-//Solution:
-poll.registerNewAnswer = function () {
-  window.prompt(`${poll.question}\n${poll.options.join('\n')}`);
-};
-poll.registerNewAnswer();
-console.log(poll)
+// //Solution:
+// poll.registerNewAnswer = function () {
+//   window.prompt(`${poll.question}\n${poll.options.join('\n')}`);
+// };
+// poll.registerNewAnswer();
+// console.log(poll);
+
+//Immediately invoked functions
